@@ -18,11 +18,19 @@
   </head>
   <body>
     <!-- navbar section -->
-    <nav class="hamburger" onclick="toggleMenu()">
-      <a href="#home" id="logoname">ARSHA</a>
-      <ul>
+    <nav class="navbar">
+      <a href="#" id="logoname">ARSHA</a>
+
+      <div class="menu-toggle" id="menuToggle">
+        <span class="open-icon">☰</span>
+        <span class="close-icon">✖</span>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#team">Team</a></li>
         <li><a href="#pricing">Pricing</a></li>
         <li><a href="#dropdown">Dropdown</a></li>
@@ -473,16 +481,20 @@
       </main>
     </section>
 
+    <script>
+  const toggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
+
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('open');
+    navLinks.classList.toggle('active');
+  });
+</script>
+
+
     <script
       src="https://kit.fontawesome.com/6eb360b6ad.js"
       crossorigin="anonymous"
     ></script>
-
-    <script>
-      function toggleMenu() {
-        const navList = document.querySelector("nav ul");
-        navList.classList.toggle("show");
-      }
-    </script>
   </body>
 </html>

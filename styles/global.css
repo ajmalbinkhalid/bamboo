@@ -28,33 +28,8 @@ a {
   color: white;
 }
 
-/* navbar section starts */
 
-nav {
-  background-color: var(--bg-primary);
-  height: 10vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 60px;
-}
-
-#logoname {
-  font-size: 30px;
-  font-weight: 700;
-}
-
-.buttons {
-  background-color: var(--btn);
-  padding: 10px 30px;
-  border-radius: 20px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-}
+/* header section starts */
 
 header {
   background-color: var(--bg-primary);

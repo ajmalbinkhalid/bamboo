@@ -1,12 +1,5 @@
-:root {
-  --bg-primary: #36517e;
-  --btn: #47b2e4;
-  --text-grey: #bfcce4;
-  --text-small-grey: #676767;
-  --bg-grey: #abb2c1d4;
-}
 
-/* contact section starts */
+/* contact details section */
 
 #contact .details {
   display: flex;
@@ -22,6 +15,22 @@
   justify-content: center;
   padding: 30px;
   flex-wrap: wrap;
+}
+
+#contact .details .item{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+#contact .details .item .icon{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-grey);
 }
 
 /* map section inside contact */
@@ -42,7 +51,7 @@
   border-radius: 10px;
 }
 
-/* contact form section starts */
+/* contact form section  */
 
 .contact-form {
   width: 700px;
@@ -79,6 +88,10 @@
   gap: 20px;
 }
 
+#message{
+  height: 300px;
+}
+
 .contact-form .form-group {
   flex: 1;
 }
@@ -96,7 +109,7 @@
 }
 
 .contact-form button:hover {
-  background-color: #339ecb;
+  background-color: var(--hover-blue);
 }
 
 /* responsive styles */

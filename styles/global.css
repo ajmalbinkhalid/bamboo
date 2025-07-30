@@ -21,9 +21,22 @@ body {
   --text-grey: #bfcce4;
   --text-small-grey: #676767;
   --bg-grey: #abb2c1d4;
+  --hover-blue:#2596c6;
 }
 
 a {
   text-decoration: none;
   color: white;
+}
+
+a.blue-btn:hover{
+  color: white !important; 
+  background-color: var(--hover-blue);
+  transition: all 0.8s ease-in-out;
+}
+
+a.white-btn:hover{
+  border-color: var(--btn) !important;
+  color: var(--btn) !important;
+  transition: 1s;
 }

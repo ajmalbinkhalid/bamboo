@@ -35,7 +35,7 @@
         <li><a href="#pricing">Pricing</a></li>
         <li><a href="#dropdown">Dropdown</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#get-started" class="buttons">Get Started</a></li>
+        <li><a href="#get-started" class="buttons blue-btn">Get Started</a></li>
       </ul>
     </nav>
 
@@ -49,8 +49,8 @@
           <p>websites with Bootstrap</p>
         </div>
         <div class="header-btns">
-          <a href="" class="buttons">Get Started</a>
-          <a href="">
+          <a href="" class="buttons blue-btn">Get Started</a>
+          <a href="" class="white-btn">
             <i class="fa-solid fa-circle-play"></i>
             Watch Video
             <i class="fa-solid fa-download"></i>
@@ -170,7 +170,7 @@
       </div>
     </article>
 
-    <!-- fourth section  -->
+    <!-- services section  -->
     <article class="services">
       <div class="img">
         <div><img src="assets/image3.jpg" alt="" /></div>
@@ -185,6 +185,8 @@
           tempore sit accusamus a doloremque officiis, omnis ipsa consectetur
           rerum ducimus. its good.
         </p>
+
+        <!-- skill section -->
         <div class="skills">
           <div class="skill">
             <div class="skill-title">HTML</div>
@@ -224,7 +226,7 @@
           perspiciatis omnis corporis ex dolor rerum.
         </p>
       </div>
-      <a href="" class="btn">Call To Action</a>
+      <a href="" class="btn white-btn">Call To Action</a>
     </section>
 
     <!-- team section -->
@@ -424,29 +426,35 @@
 
     <!-- contact section -->
     <section id="contact">
-      <div class="text-center">
+      <aside class="text-center">
         <h1>CONTACT</h1>
         <h3>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam,
           aliquid!
         </h3>
-      </div>
+      </aside>
       <main>
         <div class="details">
           <div class="item">
-            <i class="fa-solid fa-location-dot"></i>
+            <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+            <aside>
             <h3>Address</h3>
             <p>A108 Adam Street, New York, NY 535022</p>
+            </aside>
           </div>
           <div class="item">
-            <i class="fa-solid fa-phone"></i>
+            <div class="icon"><i class="fa-solid fa-phone"></i></div>
+            <aside>
             <h3>Call Us</h3>
             <p>+1 5858 654964</p>
+            </aside>
           </div>
           <div class="item">
-            <i class="fa-regular fa-envelope"></i>
+            <div class="icon"><i class="fa-regular fa-envelope"></i></div>
+            <aside>
             <h3>Email Us</h3>
             <p>Info@example.com</p>
+            </aside>
           </div>
           <div class="map">
             <iframe
@@ -476,21 +484,20 @@
           <label for="message">Message</label>
           <textarea id="message" name="message" rows="5" required></textarea>
 
-          <button type="submit">Send Message</button>
+          <button type="submit" class="blue-btn">Send Message</button>
         </form>
       </main>
     </section>
 
     <script>
-  const toggle = document.getElementById('menuToggle');
-  const navLinks = document.getElementById('navLinks');
+      const toggle = document.getElementById("menuToggle");
+      const navLinks = document.getElementById("navLinks");
 
-  toggle.addEventListener('click', () => {
-    toggle.classList.toggle('open');
-    navLinks.classList.toggle('active');
-  });
-</script>
-
+      toggle.addEventListener("click", () => {
+        toggle.classList.toggle("open");
+        navLinks.classList.toggle("active");
+      });
+    </script>
 
     <script
       src="https://kit.fontawesome.com/6eb360b6ad.js"

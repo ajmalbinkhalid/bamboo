@@ -1,0 +1,39 @@
+#brands {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+  background-color: var(--bg-grey);
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.brand-images {
+  width: 100px;
+  height: auto;
+}
+
+.brand-images img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  #brands {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .brand-images {
+    width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-images {
+    width: 60px;
+  }
+}

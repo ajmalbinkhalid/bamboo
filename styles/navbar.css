@@ -30,6 +30,11 @@ nav .buttons {
 .nav-links a {
   color: white;
   text-decoration: none;
+  
+}
+
+.nav-links a:hover{
+  color: var(--btn);
 }
 
 /* Mobile styles */

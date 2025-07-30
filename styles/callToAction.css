@@ -1,0 +1,52 @@
+#callToAction {
+  background-color: var(--bg-primary);
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 60px;
+}
+
+#callToAction .texts {
+  max-width: 1000px;
+  color: white;
+  font-size: 20px;
+}
+
+#callToAction a {
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  #callToAction {
+    flex-direction: column;
+    height: auto;
+    padding: 30px 40px;
+    gap: 20px;
+    text-align: center;
+  }
+
+  #callToAction .texts {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  #callToAction {
+    padding: 30px 20px;
+  }
+
+  #callToAction .texts {
+    font-size: 16px;
+  }
+
+  #callToAction a {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}

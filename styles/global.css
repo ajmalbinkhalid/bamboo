@@ -2,13 +2,14 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
+  color: var(--text-small-grey);
   background-color: white;
   font-family: "Open Sans", sans-serif;
   margin: 30px;
@@ -18,7 +19,8 @@ body {
   --bg-primary: #36517e;
   --btn: #47b2e4;
   --text-grey: #bfcce4;
-  --bg-grey: #f5f6f8;
+  --text-small-grey: #676767;
+  --bg-grey: #abb2c1d4;
 }
 
 a {
@@ -155,32 +157,32 @@ header {
   height: auto;
 }
 
-.third .questions{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.third .questions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.third .question{
-    background-color: white;
-}
-
-.third .question p:first-child{
-    color: var(--btn);
-    font-weight: 700;
+.third .question {
+  background-color: white;
 }
 
-.third .contents p{
-    margin: 10px 0;
+.third .question p:first-child {
+  color: var(--btn);
+  font-weight: 700;
 }
 
-.third .contents .heading{
-    color: var(--bg-primary);
-    font-size: 30px;
+.third .contents p {
+  margin: 10px 0;
 }
 
-.third .contents .heading span{
-    color: var(--bg-primary);
-    font-weight: 1000;
+.third .contents .heading {
+  color: var(--bg-primary);
+  font-size: 30px;
+}
+
+.third .contents .heading span {
+  color: var(--bg-primary);
+  font-weight: 1000;
 }
 
 /* skill section starts */
@@ -215,21 +217,178 @@ header {
 
 /* services section starts */
 
-#callToAction{
-    background-color: var(--bg-primary);
-    height: 200px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+#callToAction {
+  background-color: var(--bg-primary);
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#callToAction a {
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+#callToAction .texts {
+  max-width: 1000px;
+  color: white;
+}
 
-}
-#callToAction a{
-    border: 2px solid white;
-    padding: 10px 20px;
-    border-radius: 30px;
-}
-#callToAction .texts{
-    max-width: 1000px;
-    color: white;
+/* team section starts */
+
+#team .members {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(2, 1fr); 
+  gap: 20px;
+  padding: 100px;
 }
 
+#team .member {
+  display: flex;
+  gap: 30px;
+  border: 1px solid #e0e0e0; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* soft shadow */
+  padding: 20px;
+}
+
+#team .member .member-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 50%;
+}
+
+#team .member-photo img {
+  border-radius: 50%;
+  width: 180px;
+}
+
+.text-center {
+  width: 100%;
+  text-align: center;
+  color: var(--text-small-grey);
+  margin-top: 100px;
+}
+
+#team .icons {
+  display: flex;
+  gap: 30px;
+}
+
+#team .icons .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: var(--bg-grey);
+}
+
+/* pricing section starts */
+
+#pricing{
+  background-color: var(--bg-grey);
+}
+
+#pricing .plans{
+  padding: 30px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+#pricing .plan{
+  background-color: white;
+  height: 520px;
+  width: 370px;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* soft shadow */
+}
+
+#pricing .plan-btn button{
+  color: var(--btn);
+  border: 2px solid var(--btn);
+  background-color: white;
+  padding: 12px 36px;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+/* contact section starts */
+
+#contact .details{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#contact main{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding: 30px;
+}
+
+
+/* contact form section starts */
+
+.contact-form {
+  /* max-width: 600px; */
+  width: 700px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.contact-form .row {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-form .form-group {
+  flex: 1;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #47b2e4;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #339ecb;
+}

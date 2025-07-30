@@ -13,11 +13,12 @@
     <link rel="stylesheet" href="styles/skills.css" />
     <link rel="stylesheet" href="styles/callToAction.css" />
     <link rel="stylesheet" href="styles/team.css" />
+    <link rel="stylesheet" href="styles/pricing.css" />
     <link rel="stylesheet" href="styles/contact.css" />
   </head>
   <body>
     <!-- navbar section -->
-    <nav>
+    <nav class="hamburger" onclick="toggleMenu()">
       <a href="#home" id="logoname">ARSHA</a>
       <ul>
         <li><a href="#home">Home</a></li>
@@ -442,14 +443,11 @@
           <div class="map">
             <iframe
               src="https://www.google.com/maps/embed?pb=..."
-              alt=""
-              width="400px"
               height="260px"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
-            >
-            </iframe>
+            ></iframe>
           </div>
         </div>
         <form class="contact-form">
@@ -475,20 +473,16 @@
       </main>
     </section>
 
-    <!-- services section -->
-    <!-- <section id="services">
-      <h1>SERVICES</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-      <div class="service-items">
-        <div class="service-item">
-
-        </div>
-      </div>
-    </section> -->
-
     <script
       src="https://kit.fontawesome.com/6eb360b6ad.js"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      function toggleMenu() {
+        const navList = document.querySelector("nav ul");
+        navList.classList.toggle("show");
+      }
+    </script>
   </body>
 </html>

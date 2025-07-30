@@ -7,9 +7,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 10px 60px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  position: relative;
+  z-index: 10;
 }
 
 #logoname {
@@ -22,71 +21,58 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 30px;
-  margin: 0;
-  padding: 0;
 }
 
 nav ul li a {
-  color: var(--text-grey);
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
   color: white;
+  font-weight: 500;
 }
 
 .buttons {
   background-color: var(--btn);
-  color: white;
   padding: 10px 30px;
   border-radius: 20px;
-  transition: background-color 0.3s ease;
+  color: white;
 }
 
-.buttons:hover {
-  background-color: #289cd6;
+/* Hamburger styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
 }
 
-/* Responsive styles */
-@media (max-width: 992px) {
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
   nav {
-    flex-direction: column;
-    align-items: flex-start;
     padding: 10px 30px;
-    height: auto;
   }
 
   nav ul {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-primary);
     flex-direction: column;
-    width: 100%;
-    gap: 15px;
-    margin-top: 10px;
+    align-items: center;
+    display: none;
+    gap: 20px;
+    padding: 20px 0;
   }
 
-  nav ul li {
-    width: 100%;
+  nav ul.show {
+    display: flex;
   }
 
-  nav ul li a {
-    display: block;
-    width: 100%;
-    padding: 10px 0;
-    border-bottom: 1px solid var(--bg-grey);
-  }
-}
-
-@media (max-width: 576px) {
-  #logoname {
-    font-size: 24px;
-  }
-
-  .buttons {
-    padding: 8px 20px;
-    font-size: 14px;
-  }
-
-  nav {
-    padding: 10px 20px;
+  .hamburger {
+    display: flex;
   }
 }
